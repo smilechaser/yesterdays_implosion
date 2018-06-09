@@ -1,0 +1,33 @@
+Definition:
+  name: Apparel
+  fields:
+    name:
+      type: string
+      unique: true
+    part:
+      type: reference
+      subtype: BodyPart
+
+---
+
+Apparel:
+  name: hat
+  part: Bodypart.Head.Top
+
+---
+
+Apparel:
+  name: boots
+  part: Bodypart.Feet
+
+---
+
+Apparel:
+  name: t-shirt
+  part: Bodypart.Torso
+
+---
+
+Apparel:
+  name: jeans
+  part: Bodypart.Lower

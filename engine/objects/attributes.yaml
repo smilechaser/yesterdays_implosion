@@ -1,0 +1,34 @@
+Definition:
+  name: Attribute
+  fields:
+    name:
+      type: string
+      unique: true
+    description:
+      type: string
+    value:
+      type: integer
+
+---
+
+Attribute:
+  name: strength
+
+---
+
+Attribute:
+  name: speed
+
+---
+
+Attribute:
+  name: intelligence
+
+---
+
+Attribute:
+  name: HOSIE
+  description: >
+    Health Or Structural Integrity Equivalent.
+    For living things treat this as "Health",
+    or for non-living things "Structural Integrity".

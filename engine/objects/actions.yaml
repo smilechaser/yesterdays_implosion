@@ -1,0 +1,9 @@
+Definition:
+  name: Action
+  model.fields:
+    name:
+      type: string
+      unique: true
+---
+Action:
+  name: move

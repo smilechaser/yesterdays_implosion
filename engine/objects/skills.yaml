@@ -1,0 +1,6 @@
+Definition:
+  name: Skill
+  fields:
+    name:
+      type: string
+      unique: true

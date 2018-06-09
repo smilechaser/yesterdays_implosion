@@ -1,0 +1,23 @@
+Definition:
+  name: Contact
+  notes: >
+    "This is an entry in the player's list of contacts. It allows them
+    to recognize (or ignore) other players."
+  fields:
+    player: Player
+    ignore:
+      type: boolean
+      default: false
+    color:
+      type: choice
+      multi: false
+      choices:
+        - default
+        - red
+        - green
+        - blue
+        - yellow
+        - orange
+        - cyan
+        - black
+        - white

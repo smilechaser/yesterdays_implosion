@@ -1,0 +1,37 @@
+Definition:
+  name: MapTile
+  fields:
+    description: string
+    players: 
+      type: list
+      subtype: Player
+
+    # radio, generator, doors, barricades, etc.
+    fixtures: 
+      type: list
+      subtype: Fixture
+
+---
+
+Definition:
+  name: Map
+  fields:
+
+    name: string
+    width: integer
+    height: integer
+    tiles: 
+      type: list
+      subtype: MapTile
+
+---
+
+#
+# The game world - contains one or more (named) mapsxxx.
+#
+Definition:
+  name: World
+  fields:
+    maps:
+      type: map
+      subtype: Map

@@ -1,0 +1,34 @@
+Definition:
+  name: Player
+  fields:
+    name: string
+    description: string
+    attributes:
+      type: list
+      subtype: Attribute
+      value:
+        - strength
+        - speed
+        - intelligence
+        - HOSIE
+    skills: 
+      type: map
+      subtype: Skill
+    inventory: 
+      type: list
+      subtype: Item
+    race:
+      type: choice
+      multiple: false
+      choices:
+        - zombie
+        - human
+
+    level: integer
+    xp: integer
+    group: string
+
+    # clothes
+    wearing: 
+      type: list
+      subtype: Apparel

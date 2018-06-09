@@ -1,0 +1,16 @@
+Player:
+  name: smilechaser
+  description: The chief cheese chewer.
+  # TODO skills: 
+  # TODO inventory: 
+  race: human
+
+  level: 1000
+  xp: 0
+  group: the frozen chosen
+
+  # clothes
+  wearing: 
+    - jeans
+    - t-shirt
+    - hat

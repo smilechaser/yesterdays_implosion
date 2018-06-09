@@ -1,0 +1,29 @@
+Definition:
+  name: Item
+  fields:
+    name:
+      type: string
+      unique: true
+    # TODO
+    skills:
+      type: list
+      subtype: string
+    properties:
+      type: list
+      subtype: string
+    actions:
+      type: list
+      subtype: string
+
+---
+
+Item:
+  name: gun
+  properties:
+    - ammo
+    - loaded
+    - safety
+  skills:
+    - firearms
+  actions:
+    - aim

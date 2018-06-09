@@ -1,0 +1,8 @@
+Definition:
+  name: Event
+  # TODO add model fields
+
+---
+
+Event:
+  name: explode

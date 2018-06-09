@@ -1,0 +1,6 @@
+Definition:
+  name: Fixture
+  fields:
+    name:
+      type: string
+      unique: true

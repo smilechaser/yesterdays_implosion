@@ -1,0 +1,55 @@
+Definition:
+  name: BodyPart
+  is: treenum
+  treenum.choices:
+    - name: All
+      parts:
+        - name: Head
+          parts:
+            - name: Top
+            - name: Face
+            - name: Ear
+              instances:
+                - left
+                - right
+        - name: Neck
+        - name: Torso
+          parts:
+            - name: Chest
+            - name: Stomach
+        - name: Arm
+          parts:
+            - name: Hand
+              instances:
+                - left
+                - right
+              parts:
+                - name: Finger
+                  instances:
+                    - left
+                    - right
+                  parts:
+                    - thumb
+                    - index
+                    - middle
+                    - ring
+                    - pinky
+        - name: Lower
+          parts:
+            - name: Groin
+            - name: Leg
+              instances:
+                - left
+                - right
+        - name: Feet
+          instances:
+            - left
+            - right
+          parts:
+            - name: Toe
+              parts:
+                - big
+                - long
+                - middle
+                - ring
+                - pinky
