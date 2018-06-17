@@ -3,6 +3,11 @@ This is a compendium of "data types" for use with fields.
 '''
 
 import inspect
+from errors import FiatException
+
+
+class BadFieldException(FiatException):
+    pass
 
 
 class Field:
@@ -28,12 +33,10 @@ class Field:
                 continue
 
             if k.startswith('_'):
-                # TODO narrow
-                raise Exception('Names cannot start with underscores')
+                raise BadFieldException('Names cannot start with underscores')
 
             if not hasattr(self, k):
-                # TODO narrow
-                raise Exception(
+                raise BadFieldException(
                     '"{}" is not a recognized meta attribute for '
                     'attribute "{}" of type "{}".'
                     .format(k, self.name, self.kind))

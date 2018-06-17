@@ -4,7 +4,6 @@ Definition:
     name:
       type: string
       unique: true
-    # TODO
     skills:
       type: list
       subtype: string
@@ -27,3 +26,8 @@ Item:
     - firearms
   actions:
     - aim
+
+---
+
+Item:
+  name: flower pot

@@ -8,6 +8,7 @@ import weakref
 
 import yaml
 
+from errors import InvalidEntityException
 from fields import FieldFactory
 
 
@@ -152,8 +153,7 @@ class ThingRegistry:
 def extract_1kv(data):
 
     if len(data) != 1:
-        # TODO narrow this
-        raise Exception()
+        raise InvalidEntityException()
 
     root, rest = [(k, v) for k, v in data.items()][0]
 
